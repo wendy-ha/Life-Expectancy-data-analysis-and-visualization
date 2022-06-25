@@ -7,5 +7,5 @@ Share the same concern with Max, two researchers from World Health Organization 
 <br/>
 - This data collection is a component of the World Health Statistic Report 2015, which can be accessed at: [https://www.who.int/docs/default-source/gho-documents/world- health-statistic-reports/world-health-statistics-2015.pdf](https://www.who.int/docs/default-source/gho-documents/world-health-statistic-reports/world-health-statistics-2015.pdf)
 - The Life Expectancy (WHO) dataset used for analysis in this report can be downloaded at: [https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who](https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who)
-- Notebook with details coding for this report can be viewed at:
-https://colab.research.google.com/drive/14rXX3rXn_Dgy0_8F5AQ- Fteb81uzF9bY#scrollTo=dUxUY3u7y8DY
+- Notebook with details coding for this report can be viewed at: https://colab.research.google.com/drive/1_y5MCmAptpWYK-XxzziXwRSCJXfWTyX3?usp=sharing
+- Author: **Wendy Ha (Swinburne University of Technology)**
