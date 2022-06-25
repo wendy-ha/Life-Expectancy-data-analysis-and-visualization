@@ -11,13 +11,13 @@ Share the same concern with Max, two researchers from World Health Organization 
 - Notebook with details coding for this report can be viewed at: https://colab.research.google.com/drive/1_y5MCmAptpWYK-XxzziXwRSCJXfWTyX3?usp=sharing
 - Author: **Wendy Ha (Swinburne University of Technology)**
 ## Table of Contents
-1.0 Import Libraries
-2.0 Data Cleaning and EDA
-  2.1 Preview Granularity/Variables description
-  2.2 Check duplicated rows and columns
-  2.3 Handling missing values
-    2.3.1 Missing values detection
-    2.3.2 Dealing with Missing values
+1.0 Import Libraries <br/>
+2.0 Data Cleaning and EDA <br/>
+  2.1 Preview Granularity/Variables description <br/>
+  2.2 Check duplicated rows and columns <br/>
+  2.3 Handling missing values <br/>
+    2.3.1 Missing values detection <br/>
+    2.3.2 Dealing with Missing values <br/>
   2.4 Handling outliers
     2.4.1 Outlier detection
     2.4.2 Checking Data Distribution with Histogram and Box Plots
