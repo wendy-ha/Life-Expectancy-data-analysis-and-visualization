@@ -13,8 +13,8 @@ Share the same concern with Max, two researchers from World Health Organization 
 ## Table of Contents
 1.0 Import Libraries <br/>
 2.0 Data Cleaning and EDA <br/>
-  2.1 Preview Granularity/Variables description <br/>
-  2.2 Check duplicated rows and columns <br/>
+&nbsp;&nbsp;2.1 Preview Granularity/Variables description <br/>
+&nbsp;&nbsp;2.2 Check duplicated rows and columns <br/>
   2.3 Handling missing values <br/>
     2.3.1 Missing values detection <br/>
     2.3.2 Dealing with Missing values <br/>
