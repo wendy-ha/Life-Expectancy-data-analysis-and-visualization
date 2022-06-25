@@ -11,21 +11,21 @@ Share the same concern with Max, two researchers from World Health Organization 
 - Notebook with details coding for this report can be viewed at: https://colab.research.google.com/drive/1_y5MCmAptpWYK-XxzziXwRSCJXfWTyX3?usp=sharing
 - Author: **Wendy Ha (Swinburne University of Technology)**
 ## Table of Contents
-1.0 Import Libraries <br/>
-2.0 Data Cleaning and EDA <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.1 Preview Granularity/Variables description <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.2 Check duplicated rows and columns <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.3 Handling missing values <br/>
+**1.0 Import Libraries** <br/>
+**2.0 Data Cleaning and EDA** <br/>
+**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.1 Preview Granularity/Variables description <br/>**
+**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.2 Check duplicated rows and columns <br/>**
+**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.3 Handling missing values <br/>**
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.3.1 Missing values detection <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.3.2 Dealing with Missing values <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.4 Handling outliers<br/>
+**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.4 Handling outliers<br/>**
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.4.1 Outlier detection<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.4.2 Checking Data Distribution with Histogram and Box Plots<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.4.3 Retrieving outliers’ data with IQR score<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.4.4 Dealing with outliers<br/>
-3.0 Data Visualization<br/>
+**3.0 Data Visualization<br/>**
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Question 1: What are the actual factors influencing life expectancy?<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Question 2: What effect does immunisation coverage have on life expectancy in two groups developing and developed countries?<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Question 3: What effect does Schooling and Alcohol have on Life Expectancy?<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Question 4: What effect does GDP have on life expectancy?<br/>
-4.0 Conclusion
+**4.0 Conclusion**
