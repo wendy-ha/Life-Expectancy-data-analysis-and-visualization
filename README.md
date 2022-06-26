@@ -1,5 +1,5 @@
 # Analyzing the impact of vaccination on humna lifespans in developed and developing nations
-## Technologies and resource
+## Technologies and resources
 - Python 3.6 
 - Analysis libraries: numpy, pandas
 - Visualization libraries: matplotlib, seaborn, plotly (interactive visualization), [pycountry](https://github.com/jefftune/pycountry-convert) (get continent name from country)
