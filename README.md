@@ -22,37 +22,37 @@ influencing life expectancy?
 ### Detecting and Handling missing values
 - **Detecting missing values**
 
-![image](https://user-images.githubusercontent.com/90888090/175796973-03e2ef4c-cbb8-433c-bc02-83fe02c7d79d.png)
+![detect missing values](charts/detect_missing_values.png)
 - **Dealing with Missing values**
 
 Using the mean (average) value of the year to replace missing values.
 
-![image](https://user-images.githubusercontent.com/90888090/175797061-65c548c4-9a6b-459e-89b2-7cd8c2ab9652.png)
-![image](https://user-images.githubusercontent.com/90888090/175797074-74f9ce38-7acb-4945-970b-272480fd7367.png)
+![handle_missing_values1](charts/handle_missing_values.png)
+![handle_missing_values2](charts/handle_missing_values2.png)
 ### Detecting and Handling outliers
 - **Checking Data Distribution with Histogram and Box Plots**
 
-![image](https://user-images.githubusercontent.com/90888090/175797258-33152c11-b621-4f7e-b1b9-cc16637bdd8d.png)
-![image](https://user-images.githubusercontent.com/90888090/175797275-b96aacd2-1abf-40a2-a3fc-2d0a75a91398.png)
+![check_distribution1](charts/check_distribution1.png)
+![check_distribution2](charts/check_distribution2.png)
 
 - **Retrieving outliers’ data with IQR score**
 
-![image](https://user-images.githubusercontent.com/90888090/175797330-51d565b3-f277-45f4-8ef0-c499e9b34593.png)
+![IQR_scores](charts/IQR_scores.png)
 - **Dealing with outliers**
 
 The Winsorizing approach proposed by Tukey & McLaughlin (1963) is suggested in this project to handle the outliers. An ideal approach is setting all outliers to a specific percentage of the data, for example, all data above the 95th percentile are recoded to the 95th percentile value, and all observations below the 5th percentile are recoded to 25th percentile value (Tukey & McLaughlin 1963).
 
-![image](https://user-images.githubusercontent.com/90888090/175797428-eba82a3d-626f-4d0d-ac08-ffaf1cccf4d8.png)
-![image](https://user-images.githubusercontent.com/90888090/175797351-3546d5f3-5285-404d-94ac-418115748b0b.png)
+![dealing_outliers_code](charts/dealing_with_outliers.png)
+![dealing_outliers_charts](charts/dealing_outliers_charts.png)
 ## Data Visualization
 ### Question 1: What are the actual factors influencing life expectancy?
-![image](https://user-images.githubusercontent.com/90888090/175797460-0e8407ca-4d9a-4d30-8177-d999e486d05e.png)
+![q1_heatmap](charts/heatmap.png)
 ### Question 2: What effect does immunisation coverage have on life expectancy in two groups developing and developed countries?
-![image](https://user-images.githubusercontent.com/90888090/175797563-b2b89120-7c88-4365-81e1-90d9b6cb1a09.png)
+![q2](charts/q2.png)
 ### Question 3: What effect does Schooling and Alcohol have on Life Expectancy?
-![image](https://user-images.githubusercontent.com/90888090/175797738-0f953d00-cf29-42a2-946a-91f84ff7df4f.png)
+![q3](charts/q3.png)
 ### Question 4: What effect does GDP have on life expectancy?
-![image](https://user-images.githubusercontent.com/90888090/175797764-f94d7be7-2007-4938-938b-7f39bed4e1b3.png)
+![q4_worldmap](charts/q4_worldmap.png)
 ## Conclusion
 1. The World Health Organization's data set on variables impacting life expectancy still has a lot of missing numbers. These missing data values are primarily seen in nations with small populations, where data sources are not abundant.
 2. This dataset also contains numerous outliers that have been reprocessed using the Winsorization approach.
