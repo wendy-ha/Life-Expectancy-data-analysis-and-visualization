@@ -1,4 +1,4 @@
-# Analyzing the impact of vaccination on humna lifespans in developed and developing nations
+# Analyzing the impact of vaccination on human lifespans in developed and developing nations
 ## Technologies and resources
 - Python 3.6 
 - Analysis libraries: numpy, pandas
