@@ -3,7 +3,7 @@
 - Python 3.6 
 - Analysis libraries: numpy, pandas
 - Visualization libraries: matplotlib, seaborn, plotly (interactive visualization), [pycountry](https://github.com/jefftune/pycountry-convert) (get continent name from country)
-- Author: Wendy Ha (Swinburne University of Technology)
+- Author: Wendy Ha
 - The Life Expectancy (WHO) dataset: https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who
 - Notebook with details coding: https://colab.research.google.com/drive/1_y5MCmAptpWYK-XxzziXwRSCJXfWTyX3?usp=sharing
 ## Introduction
@@ -26,8 +26,15 @@ influencing life expectancy?
 - **Dealing with Missing values**
 
 Using the mean (average) value of the year to replace missing values.
-
-![handle_missing_values1](charts/handle_missing_values.png)
+```ruby
+imputed_data = []
+for year in list(df.year.unique()):
+    year_data = df[df.year == year].copy()
+    for col in list(year_data.columns)[3:]:
+        year_data[col] = year_data[col].fillna(year_data[col].dropna().mean()).copy()
+    imputed_data.append(year_data)
+df = pd.concat(imputed_data).copy()
+```
 ![handle_missing_values2](charts/handle_missing_values2.png)
 ### Detecting and Handling outliers
 - **Checking Data Distribution with Histogram and Box Plots**
@@ -36,13 +43,35 @@ Using the mean (average) value of the year to replace missing values.
 ![check_distribution2](charts/check_distribution2.png)
 
 - **Retrieving outliers’ data with IQR score**
-
-![IQR_scores](charts/IQR_scores.png)
+```ruby
+def outlier_count(col, data=df):
+    print(15*'-' + col + 15*'-')
+    q75, q25 = np.percentile(data[col], [75, 25])
+    iqr = q75 - q25
+    min_val = q25 - (iqr*1.5)
+    max_val = q75 + (iqr*1.5)
+    outlier_count = len(np.where((data[col] > max_val) | (data[col] < min_val))[0])
+    outlier_percent = round(outlier_count/len(data[col])*100, 2)
+    print('Number of outliers: {}'.format(outlier_count))
+    print('Percent of data that is outlier: {}%'.format(outlier_percent))
+```
 - **Dealing with outliers**
 
 The Winsorizing approach proposed by Tukey & McLaughlin (1963) is suggested in this project to handle the outliers. An ideal approach is setting all outliers to a specific percentage of the data, for example, all data above the 95th percentile are recoded to the 95th percentile value, and all observations below the 5th percentile are recoded to 25th percentile value (Tukey & McLaughlin 1963).
-
-![dealing_outliers_code](charts/dealing_with_outliers.png)
+```ruby
+def test_wins(col, lower_limit=0, upper_limit=0, show_plot=True):
+    wins_data = winsorize(df[col], limits=(lower_limit, upper_limit))
+    wins_dict[col] = wins_data
+    if show_plot == True:
+        plt.figure(figsize=(15,5))
+        plt.subplot(121)
+        plt.boxplot(df[col])
+        plt.title('original {}'.format(col))
+        plt.subplot(122)
+        plt.boxplot(wins_data)
+        plt.title('wins=({},{}) {}'.format(lower_limit, upper_limit, col))
+        plt.show()
+```
 ![dealing_outliers_charts](charts/dealing_outliers_charts.png)
 ## Data Visualization
 ### Question 1: What are the actual factors influencing life expectancy?
